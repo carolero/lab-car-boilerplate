@@ -1,3 +1,8 @@
+* {
+    box-shadow: none;
+    outline: none;
+}
+
 body {
     height: 100%;
     width: 100%;
@@ -53,10 +58,10 @@ a:link {
 .yellow-box-btn {
     background-color: #fff;
     color: #000;
+    border: 1px solid #fff;
     text-transform: uppercase;
     font-weight: bolder;
     margin: 0vh 5vh;
-    border: none;
 }
 
 .yellow-box-btn:hover {
@@ -235,7 +240,7 @@ a:link {
 .form-group input:focus {
     background-color: transparent;
     border: #fff 1px solid;
-    box-shadow: 0 0 0 0;
+    box-shadow: none;
     color: #fff;
 }
 
@@ -299,6 +304,74 @@ a:link {
 .credits {
     font-size: 15px;
 }
+
+/*\\\\\\\\\\\\\\\\\\\\\ MODAIS DO SITE ////////////////////*/
+
+/* MODAL INICIAR */
+
+#modal-iniciar .modal-content, .modal-body {
+    background-color: #08AC9D;
+}
+
+#modal-iniciar .modal-header i {
+    font-size: 150px;
+    color: #D3D3D3;
+}
+
+#modal-iniciar .modal-footer {
+    border: #D3D3D3;
+}
+
+#modal-iniciar .login-box {
+    background-color: #F5F5F5;
+    display: inline-block;
+    margin: 0% 20%;
+}
+
+#modal-iniciar .fa-user {
+    color: #7E878A;
+    background-color: #E9E9E9;
+    padding: 1.45vh;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #D3D3D3;
+}
+
+#modal-iniciar .fa-lock {
+    color: #7E878A;
+    background-color: #E9E9E9;
+    padding: 1.5vh;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #D3D3D3;
+}
+
+#modal-iniciar .user-box, .pass-box {
+    border-radius: 20px 20px;
+    margin: 2vh 0vh;
+}
+
+#modal-iniciar .btn-login {
+    color: #fff;
+    background-color: #F0AD4E;
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    padding: 5px 10px;
+    margin: 1vh 12vh;
+}
+
+#modal-iniciar .login-box p {
+    margin: 1vh 0vh;
+    color: #808080;
+}
+
+#modal-iniciar .login-box a {
+    color: rgb(216, 81, 81);
+}
+
+/* MODAL REGISTRO */
+
+/* MODAL CONDUTOR */
+
+/*\\\\\\\\\\\\\\\\\\\\\FIM DOS MODAIS DO SITE ////////////////////*/
 
 /* -------------------------------------------------------------------------------- */
 /* -------------------------------------------------------------------------------- */
