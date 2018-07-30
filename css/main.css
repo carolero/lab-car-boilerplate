@@ -445,6 +445,33 @@ a:link {
 }
 /* MODAL CONDUTOR */
 
+#modal-condutor .modal-header, #modal-condutor .modal-body {
+    border: none;
+    background-color: #C3C3C3;
+}
+
+#modal-condutor .modal-body select {
+    font-style: bold;
+    font-size: 15px;
+    background-color: #fff;
+    padding: 0.5vh 1vh;
+    margin: 1vh 2vh;
+    color:#000;
+    border: none;
+    border-radius: 2px;
+    width: 54vh;
+}
+
+.txt-condutor {
+    font-weight: bolder;
+    margin: 1vh 0vh;
+}
+
+.info span {
+    font-size: 15px;
+}
+
+
 /*\\\\\\\\\\\\\\\\\\\\\FIM DOS MODAIS DO SITE ////////////////////*/
 
 /* -------------------------------------------------------------------------------- */
