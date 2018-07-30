@@ -243,17 +243,40 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="col-1 col-11 btn btn-primary btn-cuenta" data-toggle="button" aria-pressed="false" autocomplete="off">
+                  Ya tienes una cuenta?
+              </button>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>Modal body text goes here.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <p>O CREA UNA CUENTA NOVA</p>
+            <div class="first-box-name">
+              <input type="text" class="form-control nombre-box" id="nombre-box" placeholder="Nombre">
+              <input type="text" class="form-control apellido-box" id="apellido-box" placeholder="Apellido">
+            </div>
+            <div class="box-info">
+              <input type="email" class="form-control info-box" id="email-box" placeholder="Correo Electronico: ejemplo@correo.mx">
+              <input type="text" class="form-control info-box" id="tel-box" placeholder="Teléfono">
+              <input type="text" class="form-control info-box" id="contra-box" placeholder="Contraseña">
+              <input type="text" class="form-control info-box" id="ciudad-box" placeholder="Ciudad">
+              <input type="text" class="form-control info-box" id="code-box" placeholder="(Opcional) Código de invitacion">
+              <div class="dropdown">
+                  <button class="col-1 col-12 btn btn-secondary dropdown-toggle dd-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Como te enteraste de nosotros?
+                  </button>
+                  <div class="dropdown-menu col-1 col-12 center-txt" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item col-1 col-12 center-txt" href="#">Recomendación</a>
+                    <a class="dropdown-item col-1 col-12 center-txt" href="#">Correo Electronico</a>
+                    <a class="dropdown-item col-1 col-12 center-txt" href="#">Anuncio</a>
+                    <a class="dropdown-item col-1 col-12 center-txt" href="#">Redes sociales</a>
+                  </div>
+                  <button type="button" class="enviar-btn btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    ENVIAR
+                  </button>
+                </div>
+            </div>
           </div>
         </div>
       </div>
