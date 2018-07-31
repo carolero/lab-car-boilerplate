@@ -15,7 +15,7 @@ a:link {
     text-decoration:none;
 } 
 
-.hiden-mb {
+.hiden-mb, .hiden-smb {
     display: none;
 }
 
@@ -487,6 +487,9 @@ a:link {
 /* -------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 576px) {
+    .smb-hidden {
+        display: none;
+    }
     .taxi-img {
         height: 80vh;
     }
@@ -545,5 +548,22 @@ a:link {
     }
     .second-list {
         margin: 10vh 0vh 0vh 5vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .tarifas {
+        height: 130vh;
+    }
+    .iphone img{
+        height: 40vh;
+        margin-top: 2vh;
+    }
+    .hiden-smb {
+        display: inline-block;
+
+    }
+    .smb-hidden {
+        display: none;
     }
 }
