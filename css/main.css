@@ -19,6 +19,10 @@ a:link {
     display: none;
 }
 
+#map {
+    height: 100%;
+}
+
 /* PRIMEIRA SEÇÃO DO SITE */
 
 .img-container {
