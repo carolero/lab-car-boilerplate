@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- PRIMEIRA SEÇÃO DO SITE -->
+  <!-- NAVEGADOR -->
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top my-nav">
     <div class="container my-cont">
@@ -33,20 +33,26 @@
     </div>
   </nav>
 
-  <!-- SEGUNDA SEÇÃO DO SITE -->
+  <!-- PRIMEIRA SEÇÃO DO SITE -->
 
   <div class="img-container taxi-img">
     <div class="divider-yellow-box"></div>
     <div class="offset-7 yellow-box">
-      <div class="col-lg-10 yellow-box-txt">
+        <div class="col-lg-10 yellow-box-txt-hiden hiden-mb"> <!--Mobile-->
+            <h2>Comienza a viajar con <img src="assets/images/logoBlanco.png" style="height: 20px; padding-left: 5px"></h2>
+        </div>
+        <button type="button" class="btn btn-primary btn-descarga hiden-mb" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Descarga el app
+        </button>
+      <div class="col-lg-10 yellow-box-txt dpl-hidden">
         <h2>Disfruta del viaje</h2>
         <h2>Eres dueño de tu tiempo</h2>
         <p>Viaja con <img src="assets/images/logoBlanco.png" style="height: 20px; padding-left: 5px"></p>
       </div>
-      <button type="button" class="yellow-box-btn btn" href="#modal-registro" data-toggle="modal" aria-pressed="false" autocomplete="off">
+      <button type="button" class="yellow-box-btn btn dpl-hidden" href="#modal-registro" data-toggle="modal" aria-pressed="false" autocomplete="off">
         Regístrate
       </button>
-      <div class="o-bien">
+      <div class="o-bien dpl-hidden">
         <hr class="first-yellow-box-hr">
         <p>O bien</p>
         <hr class="second-yellow-box-hr">
@@ -57,32 +63,45 @@
     </div>
   </div>
 
-  <!-- TERCEIRA SEÇÃO DO SITE -->
+  <!-- SEGUNDA SEÇÃO DO SITE -->
 
   <div class="cel-box">
     <div class="cel-img">
       <div class="col-lg-10 iphone iphone-nohidden">
         <div class="row">
-          <img class=" offset-1" src="assets/images/iPhone6Plus.png" alt="">
-          <div class="offset-2 col-lg-4">
+            <div class="offset-2 col-lg-4 hiden-mb"> <!--Mobile-->
+                <div class="row"><h3 class="h3">La nueva app</h3></div>
+            </div>
+          <img class="phone offset-1" src="assets/images/iPhone6Plus.png" alt="">
+          <div class="offset-2 col-lg-4 dpl-hidden">
             <div class="row"><h3 class="h3">Descarga la nueva app</h3></div>
             <div class="row"><p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p></div>
             <div class="row"><p>Con sólo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes. Tu conductor sabe exactamente a dónde ir.</p></div>
           </div>
         </div>
       </div>
+      <div class="row hiden-mb llega"><p>Llega a tu destino aún más rápido</p></div> <!--Mobile-->
+
     </div>
   </div>
 
   <div class="divider"></div>
 
+  <!-- TERCEIRA SEÇÃO DO SITE -->
+
   <div class="driver-img-container driver-img">
     <div class="row drive">
-      <div class="col-4 offset-8 jumbo-drive">
+      <div class="col-4 offset-8 jumbo-drive dpl-hidden">
         <h3 class="h3">Conduce cuando quieras</h3>
         <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
         <button type="button" class="btn btn-default" href="#modal-condutor" data-toggle="modal">Conviértete en conductor</button>
       </div>
+
+      <div class="col-1 col-12 jumbo-drive hiden-mb"> <!--Mobile-->
+          <h3 class="h3 offset-1">Conduce cuando quieras</h3>
+          <p class="offset-1">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+          <button type="button" class="btn btn-default offset-1" href="#modal-condutor" data-toggle="modal">Conviértete en conductor</button>
+        </div>
     </div>
   </div>
 
@@ -93,7 +112,7 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="row">
-              <div class="offset-2 col-lg-10">
+              <div class="offset-2 col-lg-10 dpl-hidden">
                 <br/>
                 <h3 class="padding-rates letter-white">Tarifas</h3>
                 <h4 class=" letter-white">Consulta las tarifas LabCar aquí</h4>
@@ -130,9 +149,45 @@
                 </div>
               </div>
             </div>
+            <div class="offset-1 col-lg-10 hiden-mb"> <!--Mobile-->
+                <br/>
+                <h3 class="padding-rates letter-white">Tarifas</h3>
+                <h4 class=" letter-white">Consulta las tarifas LabCar aquí</h4>
+                <br/>
+                <div class="row">
+                  <div class="col-1 col-2">
+                    <img class="img-form" src="assets/images/shape.png" alt="shape">
+                  </div>
+                  <div class="col-7 col-8">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control ingrese" placeholder="Ingrese su punto de partida">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <br/>
+                <div class="row">
+                  <div class="col-1 col-2">
+                    <img class="img-form" src="assets/images/shape2.png" alt="shape2">
+                  </div>
+                  <div class="col-7 col-8">
+                    <form>
+                      <div class="form-group">
+                        <input type="text" class="form-control form-resp ingrese" placeholder="Ingrese su destino">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="row">
+                    <div class="offset-4 col-lg-4 botton-form">
+                        <button type="button" class="btn btn-default button-map">¡TRAZAR RUTA!</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
           <div class="col-lg-5">
-              <div class="col-md-5 col-7">
+              <div class="col-md-5 col-7 map-google" >
                   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14629.202815558723!2d-46.6623001!3d-23.5576413!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5737e7d673c4bd0a!2zSWJtZWMgLSBGYWN1bGRhZGUsIEdyYWR1YcOnw6NvLCBWZXN0aWJ1bGFyLCBNQkEsIFDDs3MtR3JhZHVhw6fDo28!5e0!3m2!1spt-BR!2sbr!4v1532896281844" width="500" height="350" frameborder="0" style="border:1px solid #fff; padding: 1vh;" allowfullscreen></iframe>
                 </div>
           </div>
@@ -142,7 +197,7 @@
 
    <!-- QUINTA SEÇÃO DO SITE - FOOTER -->
 
-  <div class="footer">
+  <div class="footer dpl-hidden">
     <div class="col-3 offset-1 lab-logo-black">
       <img src="assets/images/logoBlanco.png" class="d-inline-block" alt="">
     </div>
@@ -194,6 +249,48 @@
   <div class="footer-bottom">
   </div>
 
+
+  <div class="footer hiden-mb">
+      <div class="clab-logo-black">
+        <img src="assets/images/logoBlanco.png" class="d-inline-block" alt="">
+      </div>
+      <hr class="first-hr">
+      <div class="row">
+          <div class="first-list">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="">Viaja</a></li>
+              <li class="list-group-item"><a href="">Conduce</a></li>
+              <li class="list-group-item"><a href="">Ciudades</a></li>
+              <li class="list-group-item"><a href="">Ciudades</a></li>
+              <li class="list-group-item"><a href="">Entregas</a></li>
+              <li class="list-group-item"><a href="">Cómo entregas?</a></li>
+              <li class="list-group-item"><a href="">Países</a></li>
+              <li class="list-group-item"><a href="">Seguridad</a></li>
+            </ul>
+          </div>
+          <div class="col-2 second-list">
+              <div class="app-download-icon">
+                  <div class="row applestore">
+                    <img src="assets/images/appstore.png" alt="">
+                  </div>
+                  <div class="row googleplay">
+                    <img src="assets/images/enBadgeWebGeneric.png" alt="">
+                  </div>
+                </div>
+          </div>
+          <div class="icons-bottom">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+              <i class="fab fa-apple"></i>
+              <i class="fab fa-google-play"></i>
+          </div>
+          <hr class="second-hr">
+          <p class="credits copyright">© 2017 LabCar technologies Inc.</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+    </div>
 
   <!--\\\\\\\\\\\\\\\\\\\\\ MODAIS DO SITE ////////////////////-->
 
@@ -312,8 +409,8 @@
               <option>Outros</option>
             </select>
             <div>
-                <span class="little">No ves la marca de tu vehiculo? Manda un correo a
-                    <a href="">correo@correo.com</a>
+                <span class="little">¿No ves tu vehiculo en la lista? Envía un correo electrónico a
+                    <a href="">sociosmdv@uber.com</a>
                 </span>
             </div>
             <div class="txt-condutor">
@@ -340,13 +437,19 @@
             <div class="info">
               <span>La información de la matrícula ayuda a los clientes a identificar tu vehículo</span>
             </div>
+            <button type="submit" href="#" class="btn center-block btn-info btn-enviar">Enviar</button>
           </div>
         </div>
       </div>
     </div>
 
+  <!--\\\\\\\\\\\\\\\\\\\\\ VERSÃO MOBILE ////////////////////-->
+  
+  <!-- TERCEIRA SEÇÃO DO SITE MOBILE-->
 
-  <!--\\\\\\\\\\\\\\\\\\\\\ FIM DOS MODAIS DO SITE ////////////////////-->
+
+
+
 </body>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
